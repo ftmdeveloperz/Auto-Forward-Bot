@@ -3,7 +3,7 @@ from os import getenv
 class Config(object):
       API_HASH = getenv("API_HASH", "b3a786dce1f4e7d56674b7cadfde3c9d")
       API_ID = int(getenv("API_ID", "28776072"))
-      AS_COPY = True if getenv("AS_COPY", False) == "`{file_name}`" else True
+      AS_COPY = True getenv("AS_COPY", True) == "`{file_name}`" 
       BOT_TOKEN = getenv("BOT_TOKEN", "7291479898:AAEOcnAWa15wcBoVY2pH13PRmdPl3r6TSco")
       CHANNEL = list(x for x in getenv("CHANNEL_ID", "-1002261985371:-1002487385156").replace("\n", " ").split(' '))
 
